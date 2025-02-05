@@ -1,27 +1,105 @@
-# High Score Wins Calculator
+# 🏆 HighScoreWins - Game Score Calculator
 
-A simple Java program that determines the winner of a game based on input scores.
+## 🎮 What's This All About? 
+Think of HighScoreWins as your personal sports referee in code! This Java program takes your game scores and team names, crunches the numbers, and declares the winner faster than you can say "touchdown!"
 
-## Description
+## 🎯 How It Works
+The program expects input in this format:
+TeamA:TeamB|Score1:Score2
 
-This program takes a game score input in a specific format and determines which team won based on their scores. It's designed to process a string input containing two team names and their respective scores.
+For example:
+Lakers:Bulls|120:115
 
-## Features
+## 📸 Project Screenshots
+### Input Screen
+![Input Screen](docs/images/input.png)
+*Here's how the input screen looks when you run the program*
 
-- Accepts game scores in the format "TeamA:TeamB|Score1:Score2"
-- Parses team names and scores
-- Compares scores and determines the winner
-- Displays the winning team name
+### Score Processing
+![Score Processing](docs/images/processing.png)
+*The program processing the team scores*
 
-## Getting Started
+### Winner Declaration 
+![Winner Screen](docs/images/winner.png)
+*Final screen showing the winning team*
 
-### Prerequisites
+## 📸 How to Add Your Screenshots
+1. Create a docs/images folder in your repository:
+mkdir -p docs/images
 
-- Java Development Kit (JDK) 8 or higher
-- Any Java IDE (Eclipse, IntelliJ IDEA, etc.) or a text editor
+2. Add your screenshots to this folder:
+- input.png - Screenshot of program startup
+- processing.png - Screenshot of score processing
+- winner.png - Screenshot of winner announcement
 
-### Installation
+3. Reference them in the README using:
+![Description](docs/images/your-image.png)
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/high-score-wins.git
+## 🚀 Features
+- Smart string parsing to separate team names and scores
+- Robust error handling for input validation
+- Clean and intuitive output format
+- Support for any team names and valid scores
+
+## 📋 Input Format Explained
+RedSox:Yankees|6:4
+└─┬─┘ └─┬─┘ └┬┘
+ │      │    └── Team scores separated by ':'
+ │      └─────── Separator between teams and scores '|'
+ └────────────── Team names separated by ':'
+
+## 🎮 How to Run
+# Clone the repository
+git clone https://github.com/yourusername/HighScoreWins.git
+
+# Navigate to project directory
+cd HighScoreWins
+
+# Compile the Java file
+javac com/pluralsight/HighScoreWins.java
+
+# Run the program
+java com.pluralsight.HighScoreWins
+
+## 🛠️ Technical Details
+- Input Processing:
+ - Uses String.split() with regex patterns
+ - Handles team names and scores separately
+ - Converts string scores to integers for comparison
+- Dependencies:
+ - java.util.Scanner
+ - java.util.regex.Pattern
+
+## 🎯 Sample Usage
+Please enter a game score: Warriors:Nets|108:105
+108
+105
+Winner: Warriors
+
+## 🐛 Common Issues & Solutions
+1. Format Error
+  - Correct format: "TeamA:TeamB|Score1:Score2"
+  - Include the separator '|' between teams and scores
+  - Use ':' to separate both teams and scores
+
+2. Number Format
+  - Ensure scores are valid numbers
+  - Don't include spaces in the input string
+
+## 🚀 Future Enhancements
+- [ ] Support for multiple game scores
+- [ ] Tournament standings calculator
+- [ ] Historical game record keeping
+- [ ] Team statistics tracking
+
+## 🤝 Contributing
+Got ideas for making this score calculator even better? PRs are welcome! Just make sure to:
+- Follow the existing code style
+- Add comments for complex logic
+- Test your changes thoroughly
+
+## 📞 Contact & Support
+- Created by: Bolutife Alli
+- GitHub: @nujabesploo(https://github.com/nujabesploo)
+
+Remember: In sports as in code, it's not just about winning - it's about how you play the game! 🎮✨
