@@ -1,105 +1,91 @@
-# 🏆 HighScoreWins - Game Score Calculator
+# 🏆 HighScoreWins
 
-## 🎮 What's This All About? 
-Think of HighScoreWins as your personal sports referee in code! This Java program takes your game scores and team names, crunches the numbers, and declares the winner faster than you can say "touchdown!"
+## About
+A simple Java program that determines the winner between two teams based on their scores. Perfect for keeping track of sports matches, gaming tournaments, or any competitive scoring system!
 
-## 🎯 How It Works
-The program expects input in this format:
+## How to Use
+Enter scores in this format:
 TeamA:TeamB|Score1:Score2
 
-For example:
+Example:
 Lakers:Bulls|120:115
 
-## 📸 Project Screenshots
-### Input Screen
+Input is split into:
+- Team names (separated by ':')
+- Scores (separated by ':')
+- Teams and scores divided by '|'
+
+## Screenshots
+### Program Start
 ![Input Screen](docs/images/input.png)
-*Here's how the input screen looks when you run the program*
+*Screenshot of initial program screen*
 
-### Score Processing
-![Score Processing](docs/images/processing.png)
-*The program processing the team scores*
+### Score Result
+![Result Screen](docs/images/result.png)
+*Screenshot showing winner declaration*
 
-### Winner Declaration 
-![Winner Screen](docs/images/winner.png)
-*Final screen showing the winning team*
-
-## 📸 How to Add Your Screenshots
-1. Create a docs/images folder in your repository:
+Adding Your Screenshots:
+1. Create images folder: 
 mkdir -p docs/images
 
-2. Add your screenshots to this folder:
-- input.png - Screenshot of program startup
-- processing.png - Screenshot of score processing
-- winner.png - Screenshot of winner announcement
+2. Add your screenshots:
+- input.png - Program startup screen
+- result.png - Final result screen
 
-3. Reference them in the README using:
+3. Update README with your images:
 ![Description](docs/images/your-image.png)
 
-## 🚀 Features
-- Smart string parsing to separate team names and scores
-- Robust error handling for input validation
-- Clean and intuitive output format
-- Support for any team names and valid scores
-
-## 📋 Input Format Explained
-RedSox:Yankees|6:4
-└─┬─┘ └─┬─┘ └┬┘
- │      │    └── Team scores separated by ':'
- │      └─────── Separator between teams and scores '|'
- └────────────── Team names separated by ':'
-
-## 🎮 How to Run
-# Clone the repository
+## Installation & Running
+# Clone repo
 git clone https://github.com/yourusername/HighScoreWins.git
 
-# Navigate to project directory
+# Go to directory
 cd HighScoreWins
 
-# Compile the Java file
+# Compile
 javac com/pluralsight/HighScoreWins.java
 
-# Run the program
+# Run
 java com.pluralsight.HighScoreWins
 
-## 🛠️ Technical Details
-- Input Processing:
- - Uses String.split() with regex patterns
- - Handles team names and scores separately
- - Converts string scores to integers for comparison
-- Dependencies:
- - java.util.Scanner
- - java.util.regex.Pattern
+## Features
+- Parses team names and scores from input
+- Handles basic error checking
+- Displays winning team
+- Works with any team names
+- Simple and fast execution
+- Clear winner display
 
-## 🎯 Sample Usage
-Please enter a game score: Warriors:Nets|108:105
-108
-105
-Winner: Warriors
+## Sample Usage
+Input: Warriors:Nets|108:105
+Output: Winner: Warriors
 
-## 🐛 Common Issues & Solutions
-1. Format Error
-  - Correct format: "TeamA:TeamB|Score1:Score2"
-  - Include the separator '|' between teams and scores
-  - Use ':' to separate both teams and scores
+## Common Issues & Solutions
+1. Format Problems:
+  - Use format: "TeamA:TeamB|Score1:Score2"
+  - Include the '|' between teams and scores
+  - Use ':' to separate teams and scores
+  - Don't add spaces
 
-2. Number Format
-  - Ensure scores are valid numbers
-  - Don't include spaces in the input string
+2. Score Errors:
+  - Use only numbers for scores
+  - Make sure scores are valid integers
 
-## 🚀 Future Enhancements
-- [ ] Support for multiple game scores
-- [ ] Tournament standings calculator
-- [ ] Historical game record keeping
-- [ ] Team statistics tracking
+## Future Updates
+- [ ] Support for multiple games
+- [ ] Score history tracking
+- [ ] Team statistics
+- [ ] Tournament mode
 
-## 🤝 Contributing
-Got ideas for making this score calculator even better? PRs are welcome! Just make sure to:
-- Follow the existing code style
-- Add comments for complex logic
-- Test your changes thoroughly
+## Code Overview
+- Uses java.util.Scanner for input
+- Uses java.util.regex.Pattern for string splitting
+- Converts string scores to integers
+- Compares scores to determine winner
 
-## 📞 Contact & Support
-- Created by: Bolutife Alli
-- GitHub: @nujabesploo(https://github.com/nujabesploo)
+## Contact
+- Created by: [Your Name]
+- GitHub: [@yourusername]
+- Project Link: https://github.com/yourusername/HighScoreWins
 
-Remember: In sports as in code, it's not just about winning - it's about how you play the game! 🎮✨
+🎮 Happy Scoring! 🏆
