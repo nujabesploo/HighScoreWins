@@ -24,17 +24,6 @@ Input is split into:
 ![Result Screen](docs/images/result.png)
 *Screenshot showing winner declaration*
 
-Adding Your Screenshots:
-1. Create images folder: 
-mkdir -p docs/images
-
-2. Add your screenshots:
-- input.png - Program startup screen
-- result.png - Final result screen
-
-3. Update README with your images:
-![Description](docs/images/your-image.png)
-
 ## Installation & Running
 # Clone repo
 git clone https://github.com/yourusername/HighScoreWins.git
