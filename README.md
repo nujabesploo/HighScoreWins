@@ -17,12 +17,11 @@ Input is split into:
 
 ## Screenshots
 ### Program Start
-![Input Screen](docs/images/input.png)
-*Screenshot of initial program screen*
+ <img src="https://github.com/user-attachments/assets/ed5fcdd3-de5c-4543-81d5-6421006936f0" width="655" alt="Screenshot 2025-02-08 at 5 29 51 PM">
+
 
 ### Score Result
-![Result Screen](docs/images/result.png)
-*Screenshot showing winner declaration*
+<img src="https://github.com/user-attachments/assets/f9c476f3-1fb0-4e8b-9eca-bcf77a31ac56" width="655" alt="Screenshot 2025-02-08 at 5 30 10 PM">
 
 ## Installation & Running
 # Clone repo
