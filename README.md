@@ -72,8 +72,8 @@ Output: Winner: Warriors
 - Compares scores to determine winner
 
 ## Contact
-- Created by: [Your Name]
-- GitHub: [@yourusername]
+- Created by: Bolutife Alli
+- GitHub: @nujabesploo
 - Project Link: https://github.com/yourusername/HighScoreWins
 
 🎮 Happy Scoring! 🏆
